@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="App/css/home.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- font awesome icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- send message with emailjs -->
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+    <!-- Message storage with Supabase -->
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+  
+</head>
+<body>
+  <div class="main">
+    <header class="header">
+      <div class="left">
+        <h2 class="logo">Talaat Gamal <span>PDF EDitor</span></h2>
+        <a href="#home" class="link"style="margin-right: 20px;"><h2>Home</h2></a>
+        <a href="#info" class="link"style="margin-right: 20px;"><h2>Info</h2></a>
+        <a href="#buy" class="link"style="margin-right: 20px;"><h2>Buy a service</h2></a>
+        <a href="#contact" class="link"><h2>Contact Me</h2></a>
+      </div>
+      <div class="right">
+        <a href="" class="link"><h2>Sign up</h2></a>
+        <h2>|</h2>
+        <a href="log/log-in/FPI/fpi.html" class="link"><h2>Login</h2></a>
+      </div>
+    </header>
+    <!-- space -->
+    <section class="home" id="home">
+      <div class="top">
+        <div class="text">
+          <h2>
+            Edit your pdf file easily and quickly for<span> only $5/month </span>Subscribe now
+          </h2>
+          <h2 dir="rtl">
+          قم  بتحرير ملف pdf الخاص بك كاملا بسهولة وبساطه مقابل <br><span> 5 دولارات شهرياً فقط </span>         
+          </h2>
+      
+          <button>
+            <a href="">
+              <h2> Subscribe now | اشترك الان</h2>    
+            </a>
+          </button>          
+        </div>
+      </div>
+      <!-- <div class="right"></div> -->
+      </section>
+    <section class="info" id="info">
+      <h2 class="title">
+        What can be done with this service
+        <hr style="border: rgb(0, 197, 158) solid 2px;">
+      </h2>
+      <div class="middle">
+        <div class="left">
+          <!-- <img src="https://isotropic.co/wp-content/uploads/2021/10/130328894_m-768x616.jpg" alt=""> -->
+          <img src="https://b83eeb945e2915539af8.ucr.io/-/quality/best/https://flippingbook-com-content.s3.amazonaws.com/Images%20for%20blog/How%20to%20Edit%20a%20PDF/How-To-Edit-Pdf-1x.png" alt="">
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/C99LTrILXyk?si=3JmnsOpE5tqNBW3H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 20px; border: rgb(255, 255, 255) solid 4px;"></iframe> -->
+        </div>
+        <div class="right">
+          <ul>
+            <!-- <li><h2>تستطيع اضافة وازالة وتغيير اي نص وايضا تحريكه</h2></li> -->
+            <li><h2>You can add , change , and move any text</h2></li>
+            <!-- <li><h2>تغيير حجم النص تكبير او تصغير وتغيير لونه وخلفيته</h2></li> -->
+            <li><h2>Resize text, change its color and background</h2></li>
+            <!-- <li><h2>تغيير لون صفحه واحده او جميع الصفحات</h2></li> -->
+            <li><h2>Change the color of one or all pages</h2></li>
+            <!-- <li><h2>امكانية تغيير نوع الخط المستخدم حسب الحاجه</h2></li> -->
+            <li><h2>Ability to change the type of font used as needed</h2></li>
+            <!-- <li><h2>تطبيق جميع التغييرات بسرعه كبيره</h2></li> -->
+            <li><h2>Apply all changes very quickly</h2></li>
+            <!-- <li><h2>امكانية تنزيل الملف pdf او تحويله الي docx ( word )</h2></li> -->
+            <li><h2>Ability to download the pdf file or convert it to docx (word)</h2></li>
+            <!-- <li><h2>يدعم الصفحات الكثيره بلا مشكله</h2></li> -->
+            <li><h2>Supports multiple pages without issue</h2></li>
+            <!-- <li><h2>واجهة مستخدم ui سهله وتحكم سلس</h2></li> -->
+            <li><h2>Intuitive UI and smooth control</h2></li>
+          </ul>
+        </div>
+      </div>
+      </section>
+    <section class="buy" id="buy">
+      <h2 class="title">
+        How to buy the service
+        <hr style="border: rgb(0, 197, 158) solid 2px;">
+      </h2>
+      <div href="" class="v-col">
+        <div class="col">
+            <div class="ty-col">
+              1 Month
+            </div>
+            <div class="ty-col2">
+              <h2>Change and move the text</h2>
+              <h2>Resizing text</h2>
+              <h2>Download pdf only</h2>
+            </div>
+            <div class="ty-col4">
+              <span>10 $</span>5 $
+            </div>
+            <div class="ty-col5">
+              <a href="">
+                Subscribe Now
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+    
+      <div href="" class="v-col">
+        <div class="col">
+            <div class="ty-col">
+              3 Month
+            </div>
+            <div class="ty-col2">
+              <h2>Support all features</h2>
+            </div>
+            <div class="ty-col4">
+              <span>30 $</span>15 $
+            </div>
+            <div class="ty-col5">
+              <a href="">
+                Subscribe Now
+              </a>
+            </div>
+          </div>
+        </div>
+    
+      <div href="" class="v-col">
+        <div class="col">
+            <div class="ty-col">
+              1 Year
+            </div>
+            <div class="ty-col2">
+              <h2>Support all features</h2>
+              <h2>80% discount for next year</h2>
+            </div>
+            <div class="ty-col4">
+              <span>120 $</span>45 $
+            </div>
+            <div class="ty-col5">
+              <a href="">
+                Subscribe Now
+              </a>
+            </div>
+          </div>
+        </div>
+    
+      </section>
+    <section class="contact" id="contact">
+      <h2 class="title" style="padding: 0px 10vw 0px 10vw; margin-top: 9vh;">
+        How to contact me
+        <hr style="border: rgb(0, 197, 158) solid 2px;">
+      </h2>
+      <div class="conta">
+        <div class="pay"><!--paypal - Bank transfer -->
+          <!-- <img src="https://ptpinc.com/wp-content/uploads/2020/05/paypal_logo_circle-.png" alt=""> -->
+          <img src="https://logos-world.net/wp-content/uploads/2020/09/PayPal-Logo-2022.png" alt="">
+          <img src="https://st.softgamings.com/uploads/BankTransfer_logo_1200x600.png" alt="" style="padding-top: 18px;">
+        </div>
+        <div class="addres"><!--egypt map-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7292972.560315107!2d25.584153100521604!3d26.80743582121013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgypt!5e0!3m2!1sen!2seg!4v1732665717057!5m2!1sen!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+        </div>
+        <div class="sosial">
+
+          <div class="s-media" id="s-media">
+            <a href="https://www.facebook.com/devtalaatgamal"><div class="icons"><i class="fa-brands fa-facebook-f"></i></div></a>
+            <a href="https://github.com/TalaatGamal"><div class="icons"><i class="fa-brands fa-github"></i></div></a>
+            <a href="https://www.linkedin.com/in/talaatgamal/"><div class="icons"><i class="fa-brands fa-linkedin"></i></div></a>
+            <a href="https://wa.me/+201147651320"><div class="icons"><i class="fa-brands fa-whatsapp"></i></div></a>
+            <a href="mailto:talaatgamal.dev@gmail.com" class="icons"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+        </div>
+        <div class="message-me" id="message-me">
+          <!-- <form action="" class="form">
+            <input type="text" placeholder="yourname">
+            <input type="email" name="" id="" placeholder="email">
+            <textarea rows="4" cols="50" id="in-spi" placeholder="your message"></textarea>
+            <div class="sipo">
+              <button type="submit">request</button>
+            </div>
+          </form> -->
+
+          <!-- <form id="contactForm" class="form">
+            <input type="text" name="username" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea rows="4" cols="50" id="in-spi" name="message" placeholder="Your Message" required></textarea>
+            <div class="sipo">
+              <a href="data/data.html" style="  height: 35px;
+              width: 120px;
+              background-color: #000000b4;
+              border: none;
+              border-bottom: #009dff solid 3px;
+              border-radius: 7px;
+              color: #ffffff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              ">Go to server</a>
+              <button type="submit" style="cursor: pointer;">request</button>
+            </div>
+          </form> -->
+          <form id="contactForm" class="form">
+            <input type="text" id="username" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="4" cols="50" name="message" placeholder="Your Message" required></textarea>
+            <div class="sipo">
+              <div class="sircle" id="dira"></div>
+              <button type="submit" style="cursor: pointer;">Send me</button>
+            </div>       
+          </form>
+    
+          <div class="thanksa">
+            <h2>Thank you, your message will be reviewed and responded to by email👍🥰</h2>
+          </div>
+
+          <!--start database -->
+          <!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+          <script>
+                // start emailjs
+            emailjs.init("3o_Ok3aG0DS4-OWJo");
+                // end emailjs
+
+                // start supabase
+            const SUPABASE_URL = "https://lnohiidyljlwffoireap.supabase.co";  // استبدل بـ Project URL
+            const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxub2hpaWR5bGpsd2Zmb2lyZWFwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI3MTc1ODMsImV4cCI6MjA0ODI5MzU4M30.kqRqH7iWFN1Id9DyN3k7y83o0YvIRbtbZiMtPBeaQIc";  // استبدل بـ API Key
+            const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+              // end supabase
+
+            const form = document.getElementById("contactForm");
+            const savedDataList = document.getElementById("savedDataList");
+          
+            form.addEventListener("submit", async function (e) {
+              e.preventDefault();
+          
+              const data = {
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+                timestamp: new Date().toISOString()  // تخزين الوقت بصيغة ISO
+              };
+          
+              // التحقق من صحة البيانات
+              if (!data.username || !data.email || !data.message) {
+                alert("يرجى تعبئة جميع الحقول!");
+                return;
+              }
+
+          
+              try {
+                // حفظ البيانات في Supabase
+                const { error } = await supabase.from("messages").insert([data]);
+                document.getElementById("dira").style.display="block";
+                if (error) throw error;
+          
+          // start emailjs
+                emailjs.send("service_jmd86we", "template_c7pd0tv", data)
+                .then((response) => {
+                  // alert("تم حفظ البيانات وإرسال البريد الإلكتروني بنجاح!");
+                  // document.getElementById("dira").style.display="block";
+                  document.getElementById("dira").style.display="none";
+                });
+          // end emailjs
+
+                alert("your message has been sent");
+                form.reset();
+          
+                // تحديث القائمة
+                loadMessages();
+              } 
+              catch (err) {
+                // console.error("خطأ أثناء الحفظ:", err);
+                // alert("حدث خطأ أثناء الحفظ!");
+              }
+            });
+          
+            // // وظيفة لجلب البيانات من Supabase
+            // async function loadMessages() {
+            //   try {
+            //     const { data, error } = await supabase.from("messages").select("*").order("timestamp", { ascending: false });
+            //     if (error) throw error;
+          
+            //     savedDataList.innerHTML = ""; // مسح القائمة القديمة
+            //     data.forEach(item => {
+            //       const listItem = document.createElement("li");
+            //       listItem.innerHTML = ` 
+            //         <strong>${item.username}</strong> - ${item.email}: ${item.message} <br>
+            //         <small>تم الإرسال في: ${new Date(item.timestamp).toLocaleString()}</small>
+            //       `;
+            //       savedDataList.appendChild(listItem);
+            //     });
+            //   } catch (err) {
+            //     console.error("خطأ أثناء جلب البيانات:", err);
+            //   }
+            // }
+            
+            // تحميل البيانات عند فتح الصفحة
+            // loadMessages();
+          </script> -->
+      <!--end database -->
+        
+        </div>
+        </div>
+      </section>
+    <!-- space -->
+    <footer class="footer">
+      <h2>Talaat Gamal © Dec 2024</h2>
+    </footer>
+  </div>
+  <script src="App/js/message-and-base.js"></script>
+</body>
+</html>

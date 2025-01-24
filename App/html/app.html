@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أداة تعديل PDF</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f9;
+    }
+
+    canvas {
+      border: 1px solid #ddd;
+      margin-top: 20px;
+      max-width: 100%;
+    }
+
+    .controls {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .controls input, .controls button, .controls select {
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .controls textarea {
+      width: 200px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>أداة تعديل PDF</h1>
+  <input type="file" id="fileInput" accept="application/pdf">
+  <input type="text" id="replaceText" placeholder="النص الجديد">
+  <button id="addTextBtn">إضافة نص</button>
+  <button id="clearCanvasBtn">مسح التعديلات</button>
+  <button id="downloadPdfBtn">حفظ PDF المعدل</button>
+  <canvas id="pdfCanvas"></canvas>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
